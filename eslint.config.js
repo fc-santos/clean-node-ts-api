@@ -5,6 +5,7 @@ import eslintParser from "@typescript-eslint/parser";
 export default [
   {
     ...eslintLove,
+    ignores: ["node_modules", "dist", "coverage"],
     files: ["**/*.ts"],
     languageOptions: {
       parser: eslintParser,
